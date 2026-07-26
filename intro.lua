@@ -71,8 +71,8 @@ function intro.update(dt)
     elseif currentRoom == 2 and mary.x > backgroundRightEdge then
         mary.x = 310 -- Spawn her just inside Room 3's left wall boundary
         currentRoom = 3
-        backgroundImage = love.graphics.newImage("scenes/NOTHINGYET .png") 
-        treeLayerImage = nil 
+        backgroundImage = love.graphics.newImage("scenes/frame3start.png") 
+        treeLayerImage = love.graphics.newImage("scenes/frame3starttrees.png")
     end
 end
 
@@ -95,5 +95,6 @@ function intro.draw()
     
     love.graphics.print("Current Room: " .. currentRoom, 10, 10)
 end
+
 
 return intro
